@@ -1,0 +1,112 @@
+import type { Job, Candidate } from './types';
+
+export const jobs: Job[] = [
+  {
+    id: '1',
+    title: 'Senior Frontend Engineer',
+    description: 'Looking for a skilled frontend engineer to build our next-gen UI.',
+    status: 'Open',
+    tags: ['React', 'TypeScript', 'Remote'],
+    order: 1,
+  },
+  {
+    id: '2',
+    title: 'Product Manager',
+    description: 'Lead the product vision and roadmap for our core platform.',
+    status: 'Open',
+    tags: ['Product', 'Strategy', 'SaaS'],
+    order: 2,
+  },
+  {
+    id: '3',
+    title: 'UX/UI Designer',
+    description: 'Design beautiful and intuitive user experiences.',
+    status: 'Closed',
+    tags: ['Design', 'Figma', 'User Research'],
+    order: 3,
+  },
+  {
+    id: '4',
+    title: 'Backend Developer (Go)',
+    description: 'Build and maintain our scalable microservices architecture.',
+    status: 'Open',
+    tags: ['Go', 'Microservices', 'Kubernetes'],
+    order: 4,
+  },
+  {
+    id: '5',
+    title: 'DevOps Engineer',
+    description: 'Automate our infrastructure and deployment pipelines.',
+    status: 'Interviewing',
+    tags: ['AWS', 'Terraform', 'CI/CD'],
+    order: 5,
+  },
+];
+
+export const candidates: Candidate[] = [
+  {
+    id: 'cand-1',
+    name: 'Alice Johnson',
+    email: 'alice.j@example.com',
+    stage: 'Applied',
+    profile: 'Experienced frontend developer with 5+ years in React and TypeScript. Passionate about building accessible and performant web applications. Previous experience at Google.',
+    avatarUrl: `https://picsum.photos/seed/1/100/100`,
+    jobId: '1',
+  },
+  {
+    id: 'cand-2',
+    name: 'Bob Williams',
+    email: 'bob.w@example.com',
+    stage: 'Screening',
+    profile: 'Product Manager with a track record of launching successful SaaS products. Strong analytical and communication skills. Certified Scrum Master.',
+    avatarUrl: `https://picsum.photos/seed/2/100/100`,
+    jobId: '2',
+  },
+  {
+    id: 'cand-3',
+    name: 'Charlie Brown',
+    email: 'charlie.b@example.com',
+    stage: 'Technical Interview',
+    profile: 'Full-stack developer with expertise in React, Node.js, and Go. Contributor to several open-source projects. Enjoys tackling complex technical challenges.',
+    avatarUrl: `https://picsum.photos/seed/3/100/100`,
+    jobId: '1',
+  },
+  {
+    id: 'cand-4',
+    name: 'Diana Prince',
+    email: 'diana.p@example.com',
+    stage: 'Offer',
+    profile: 'Senior DevOps Engineer with extensive experience in cloud infrastructure (AWS, GCP) and automation tools like Terraform and Ansible. Proven ability to improve system reliability and efficiency.',
+    avatarUrl: `https://picsum.photos/seed/4/100/100`,
+    jobId: '5',
+  },
+  {
+    id: 'cand-5',
+    name: 'Ethan Hunt',
+    email: 'ethan.h@example.com',
+    stage: 'Hired',
+    profile: 'Creative UI/UX designer with a portfolio of stunning mobile and web applications. Proficient in Figma, Sketch, and Adobe Creative Suite.',
+    avatarUrl: `https://picsum.photos/seed/5/100/100`,
+    jobId: '3',
+  },
+  {
+    id: 'cand-6',
+    name: 'Fiona Glenanne',
+    email: 'fiona.g@example.com',
+    stage: 'Applied',
+    profile: 'Junior backend developer eager to learn and contribute. Strong foundation in Go and database design from university projects. Quick learner and team player.',
+    avatarUrl: `https://picsum.photos/seed/6/100/100`,
+    jobId: '4',
+  },
+  {
+    id: 'cand-7',
+    name: 'George Costanza',
+    email: 'george.c@example.com',
+    stage: 'Rejected',
+    profile: 'Self-proclaimed architect with a focus on marine biology. Some experience with React, but primarily worked with legacy systems.',
+    avatarUrl: `https://picsum.photos/seed/7/100/100`,
+    jobId: '1',
+  },
+];
+
+export const hiringStages = ['Applied', 'Screening', 'Technical Interview', 'Offer', 'Hired', 'Rejected'];
